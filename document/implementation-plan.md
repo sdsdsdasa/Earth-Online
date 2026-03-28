@@ -19,17 +19,17 @@ Everything lives in `localStorage` under the key `earth-online`.
 {
   currentDay: 1,
   baseStats: {              // values at start of today (yesterday's confirmed values)
-    power: 53,
-    speed: 48,
-    intelligence: 51,
-    abilitySkill: 45,
-    social: 51,
+    power: 50,
+    speed: 50,
+    intelligence: 50,
+    abilitySkill: 50,
+    social: 50,
     cooking: 50,
     discipline: 50,
     clean: 50
   },
   pendingStats: {           // live values being edited today (copy of baseStats on load)
-    power: 53,
+    power: 50,
     ...
   },
   history: [
@@ -87,11 +87,11 @@ Defines the stat list as an array — single source of truth for what stats exis
 
 ```js
 export const STATS = [
-  { key: "power",        label: "Power",        initial: 53, min: 0, max: 999 },
-  { key: "speed",        label: "Speed",        initial: 48, min: 0, max: 999 },
-  { key: "intelligence", label: "Intelligence", initial: 51, min: 0, max: 999 },
-  { key: "abilitySkill", label: "Ability/Skill",initial: 45, min: 0, max: 999 },
-  { key: "social",       label: "Social",       initial: 51, min: 0, max: 999 },
+  { key: "power",        label: "Power",        initial: 50, min: 0, max: 999 },
+  { key: "speed",        label: "Speed",        initial: 50, min: 0, max: 999 },
+  { key: "intelligence", label: "Intelligence", initial: 50, min: 0, max: 999 },
+  { key: "abilitySkill", label: "Ability/Skill",initial: 50, min: 0, max: 999 },
+  { key: "social",       label: "Social",       initial: 50, min: 0, max: 999 },
   { key: "cooking",      label: "Cooking",      initial: 50, min: 0, max: 999 },
   { key: "discipline",   label: "Discipline",   initial: 50, min: 0, max: 999 },
   { key: "clean",        label: "Clean",        initial: 50, min: 0, max: 999 },
