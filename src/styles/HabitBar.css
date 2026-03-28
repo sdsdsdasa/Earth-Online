@@ -1,0 +1,10 @@
+.habit-bar { margin-bottom: 10px; }
+.habit-bar-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); font-weight: 600; margin-bottom: 5px; }
+.habit-buttons { display: flex; flex-wrap: wrap; gap: 6px; }
+.habit-btn {
+  height: 28px; padding: 0 11px;
+  background: var(--habit-btn-bg); border: 1px solid var(--input-border); border-radius: 6px;
+  color: var(--text-on-card); font-size: 0.8rem; font-weight: 500; cursor: pointer;
+  transition: background 0.1s;
+}
+.habit-btn:hover { background: var(--habit-btn-hover); }

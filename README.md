@@ -2,60 +2,45 @@
 
 An RPG-style life tracker where your daily actions level up your real-world stats.
 
-## Overview
-
-Track personal stats (Power, Speed, Intelligence, etc.) day by day. Log actions that raise or lower each stat, confirm the day, and build a history of your progress over time.
-
 ## Setup
 
-Requires [Node.js](https://nodejs.org/) (v18 or later).
+Requires [Node.js](https://nodejs.org/) (v18+).
 
 ```bash
 npm install
-npm run dev
+npm run dev        # dev server → http://localhost:5173
+npm run build      # production build → dist/
 ```
 
-Then open `http://localhost:5173` in your browser.
+## Features
+
+- **Stats** — 8 tracked stats, each with a level (Untrained → Legend), progress bar, and 7-day trend arrow
+- **Delta indicators** — see today's change (+/-) live as you press Up/Down
+- **Flash animations** — green/red flash on every stat change
+- **Quick habits** — one-tap shortcuts that apply preset stat changes
+- **Day notes** — attach a note to each confirmed day
+- **Streaks & character level** — overall level shown in header, daily streak tracked
+- **Achievements** — 6 unlockable badges with toast notifications
+- **History** — table view with best/worst day highlighting + 7-day summary
+- **Charts** — line chart of all stats over time (switch via Table/Chart tab)
+- **CSV export** — download full history as a spreadsheet
+- **JSON backup** — export and import your full save
+- **Settings** — add/rename/reorder/delete stats, edit habit shortcuts, toggle Dark/Light theme
+- **Missed day detection** — banner with backfill option if you skip a day
 
 ## Project Structure
 
 ```
-Earth-Online/
-├── index.html
-├── vite.config.js
-├── package.json
-├── src/
-│   ├── main.jsx
-│   ├── App.jsx                  # Top-level state + view routing
-│   ├── data/
-│   │   └── statConfig.js        # Add/rename/remove stats here
-│   ├── utils/
-│   │   └── storage.js           # localStorage load/save
-│   ├── components/
-│   │   ├── Dashboard.jsx        # Main stat-tracker screen
-│   │   ├── StatRow.jsx          # Single stat row (label + value + Up/Down)
-│   │   ├── ActionBar.jsx        # Reset / History / Confirm buttons
-│   │   └── HistoryView.jsx      # Day-by-day history table
-│   └── styles/
-│       ├── global.css
-│       ├── Dashboard.css
-│       ├── StatRow.css
-│       ├── ActionBar.css
-│       └── HistoryView.css
-├── document/
-│   ├── implementation-plan.md         # Base build plan
-│   └── implementation-plan-improvement.md  # Future improvements
-└── .gitignore
+src/
+  data/statConfig.js          # Stats, levels, habits, achievements, chart colors
+  utils/                      # storage, levels, streak, achievements, export
+  components/                 # Dashboard, StatRow, ActionBar, HistoryView,
+                              #   SettingsView, AchievementsView, HabitBar,
+                              #   MissedDayBanner, Toast
+  styles/                     # Per-component CSS using CSS custom properties
 ```
 
-## How It Works
-
-- **Up / Down** — adjust any stat for today
-- **Reset** — revert today's changes back to yesterday's confirmed values
-- **Confirm** — lock in the day, advance to Day N+1, save to history
-- **History** — view every confirmed day with per-stat deltas
-
-All data is stored locally in your browser's `localStorage`. Nothing is sent anywhere.
+All data is stored in `localStorage`. Nothing is sent anywhere.
 
 ## License
 

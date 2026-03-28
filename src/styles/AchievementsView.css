@@ -1,0 +1,16 @@
+.achievements-card { max-width: 560px; }
+
+.streak-info { display: flex; gap: 14px; margin-bottom: 18px; }
+.streak-box { flex: 1; background: var(--summary-bg); border-radius: 8px; padding: 14px; text-align: center; display: flex; flex-direction: column; gap: 4px; }
+.streak-num { font-size: 2rem; font-weight: 700; color: #fbbf24; }
+.streak-lbl { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; }
+
+.achievement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 10px; }
+
+.achievement-card { border-radius: 8px; padding: 12px; text-align: center; display: flex; flex-direction: column; gap: 4px; }
+.achievement-card.unlocked { background: rgba(76,175,80,0.14); border: 1px solid rgba(76,175,80,0.4); }
+.achievement-card.locked   { background: var(--summary-bg); border: 1px solid var(--input-border); opacity: 0.58; }
+
+.ach-icon  { font-size: 1.8rem; }
+.ach-label { font-size: 0.8rem; font-weight: 700; color: var(--text-on-card); }
+.ach-desc  { font-size: 0.7rem; color: var(--text-muted); }

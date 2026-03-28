@@ -1,0 +1,7 @@
+.missed-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  background: var(--banner-bg); border: 1px solid var(--banner-border); border-radius: 8px;
+  padding: 9px 13px; margin-bottom: 10px;
+  color: var(--text-on-card); font-size: 0.86rem; font-weight: 500;
+}
+.missed-actions { display: flex; gap: 7px; }
