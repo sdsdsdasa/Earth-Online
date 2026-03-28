@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #2e4a6a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.card {
+  background: #4a6d8c;
+  border: 3px solid #1e3050;
+  border-radius: 8px;
+  padding: 28px 36px 24px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card-day {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.btn-green {
+  height: 38px;
+  width: 80px;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  color: #1a3a1a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.btn-green:hover  { background: #43a047; }
+.btn-green:active { background: #388e3c; }
+
+.btn-yellow {
+  height: 44px;
+  width: 90px;
+  background: #f0c030;
+  border: none;
+  border-radius: 14px;
+  color: #3a2800;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.btn-yellow:hover  { background: #e6b820; }
+.btn-yellow:active { background: #d4a800; }
