@@ -1,0 +1,33 @@
+# Claude Code files
+CLAUDE.md
+.claude/
+
+# Private local files (prompts log, personal notes)
+/ignore/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+out/
